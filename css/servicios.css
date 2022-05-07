@@ -1,0 +1,72 @@
+.contenedor_servicio{
+   margin: 0 auto;
+   display: grid;
+   grid-gap: 30px;
+   width: 100vw;
+}
+h1{
+ font-family:'Raleway', sans-serif;  
+ margin-top: 50px;
+ margin-left: 10px;
+}
+h3{
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+}
+.servicios{
+   display:grid;
+   grid-template-columns: 20% 80%;
+   margin-top: 20px;
+}
+.iconos img{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.servicios p{
+  font-family: 'Poppins', sans-serif;
+  font-style: oblique;
+}
+#servicio{
+   animation-name:ingreso;
+   animation-duration: 1000ms;
+   animation-delay: 100ms;
+   animation-fill-mode: forwards;
+   position: relative;
+   left:-100%;
+   box-shadow: 0px 2px 5px rgba(1, 1,1 ,.1);
+}
+.contenido {
+  height: 70vh;
+}
+@keyframes ingreso{
+  to{
+    left:0%;
+  }
+}
+@media screen and (max-width:768px) {
+ .servicios{
+   display:grid;
+   grid-template-columns: 100%;
+   margin-top: 20px;
+   align-content: center;
+ }
+
+.iconos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.iconos img{
+  padding: 15px;
+}
+p{
+  text-align: center;
+}
+.contenedor_servicio{
+  width: 100%;
+}
+.contenido{
+  height: 100vh;
+}
+}

@@ -1,0 +1,32 @@
+footer{
+ width: 100vw;
+ display:grid;
+ grid-template-columns: 1fr 1fr;
+ height: 70px;
+ border-top: 1px solid red;
+ background-color: rgb(196,196,196);
+ position:fixed;
+ bottom: 0px;
+ margin-top: 30px;
+ align-items: center;
+}
+footer div{
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+}
+footer p{
+  text-align: right;
+  margin-right: 30px;
+}
+footer div img{
+  width:30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width:768px) {
+ footer{
+   position:fixed;
+ }
+}
